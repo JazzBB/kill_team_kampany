@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+
+table {
+  border: 0px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  font-family: Roboto;
+}
+
+table caption {
+  font-size: 1.01em;
+  font-weight: 600;
+  margin: .1em 0 .15em;
+  color: rgba(255, 92, 33,0.65);
+  background-color: rgba(50, 50, 50,0.5);
+  text-transform: uppercase;
+}
+
+table tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom-: 1px solid #C1C3D1;
+  background-color: rgba(0,0,0,0.5);
+  border: 1px solid rgba(50, 50, 50,0.2);
+  padding: .35em;
+  color: rgba(255, 92, 33,0.65);
+}
+
+table th{
+  padding: .625em;
+  text-align: center;
+}
+table td {
+  padding: .625em;
+  text-align: center;
+  border-right: 3px solid rgba(50, 50, 50, 0.3);
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  background-color: rgba(50,50,50,0.5);
+  color: white;
+}
+
+th:first-child {
+  border-top-left-radius:3px;
+}
+
+th:last-child {
+  border-top-right-radius:3px;
+  border-right:none;
+}
+
+tr:hover td {
+  background:rgba(255, 92, 33,0.3);
+  color:#FFFFFF;
+  border-top: 0px solid #22262e;
+}
+
+tr:first-child {
+  border-top:none;
+}
+
+tr:last-child {
+  border-bottom:none;
+}
+ 
+tr:nth-child(odd) td {
+  background:rgba(0,0,0,0.3);
+}
+ 
+tr:nth-child(odd):hover td {
+  background:rgba(255, 92, 33,0.3);
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius:3px;
+}
+ 
+tr:last-child td:last-child {
+  border-bottom-right-radius:3px;
+}
+ 
+
+td:last-child {
+  border-right: 0px;
+}
+
+th.text-left {
+  text-align: left;
+}
+
+th.text-center {
+  text-align: center;
+}
+
+th.text-right {
+  text-align: right;
+}
+
+td.text-left {
+  text-align: left;
+}
+
+td.text-center {
+  text-align: center;
+}
+
+td.text-right {
+  text-align: right;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+	display:none;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
