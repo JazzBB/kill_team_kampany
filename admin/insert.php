@@ -1,7 +1,6 @@
 <html>
 <body>
 <?php
-
 $con = mysqli_connect("localhost","root","");
 mysqli_query($con,"SET NAMES UTF8");
 if (!$con)
@@ -14,9 +13,9 @@ if (!mysqli_query($con,$sql))
   {
   die('Error: ' . mysqli_error());
   }
-echo "1 record added";
-mysqli_close($con)
+mysqli_close($con);
 ?>
+
 </body>
 
 </html>
