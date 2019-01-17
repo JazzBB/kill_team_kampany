@@ -16,9 +16,7 @@
 	</div>
 	<div class="nav-btn">
     <label for="nav-check">
-      <span></span>
-      <span></span>
-      <span></span>
+      <img src="img/more.png" height="25px">
     </label>
   </div>
 	<input type="checkbox" id="nav-check">
